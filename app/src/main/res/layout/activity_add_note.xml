@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin"
+    android:orientation="vertical"
+    tools:context=".UI.AddNoteActivity">
+
+    <android.support.text.emoji.widget.EmojiEditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/title_background"
+        android:hint="@string/title"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/selector" />
+
+    <android.support.text.emoji.widget.EmojiEditText
+        android:id="@+id/priority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/title_background"
+        android:hint="@string/priority"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/selector" />
+
+    <android.support.text.emoji.widget.EmojiEditText
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="150dp"
+        android:background="@drawable/description_background"
+        android:hint="@string/description"
+        android:textColorHint="#847e7e"
+        android:inputType="textMultiLine" />
+
+
+</LinearLayout>
